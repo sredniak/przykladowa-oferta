@@ -1,1 +1,1 @@
-# przykladowa-oferta
+Strona www z przykładową ofertą.
