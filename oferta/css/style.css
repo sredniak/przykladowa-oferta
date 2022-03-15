@@ -1,0 +1,362 @@
+/* 
+ Kod do małych ekranów 
+*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  *:focus {
+    box-shadow: none;
+  }
+  
+  body,
+  html {
+    color: #2d3436;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  .typewrite{
+    color: #ffd32a;
+    font-size: 100px;
+  }
+  .wrap{
+    color: #ffd32a;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+     
+  .splash {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    text-align: center;
+  }
+
+.about {
+    background-color: #ffffff;
+    height: auto;
+    margin-top: -50px;
+}
+
+.container{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+}
+  
+.title-about {
+    margin: 0px 0 15px 0;
+    font-weight: normal;
+    color: #2d3436;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #dfe4ea;
+    border: none;
+    color: #2d3436;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 285px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  /* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 75%;
+    padding: 8px;
+    
+  }
+  
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header */
+  .price .header {
+    background-color: #ffd32a;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: #303952;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+    h2{
+      text-align: center;
+    }
+    .more {
+      margin: 0 5px 0 5px;
+      text-align: left;
+    }
+    
+    .wiecej{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+footer{
+  text-align: center;
+  background-color: #ffd32a;
+  font-size: 11px;
+}
+a{
+  color: #2d3436;
+}
+
+/* 
+Kod dla średnich ekranów i powyzej (>600px) 
+*/
+
+@media only screen and (min-width: 599px) {
+
+  footer{
+    text-align: center;
+    background-color: #ffd32a;
+    font-size: 15px;
+  }
+  .typewrite{
+    color: #ffd32a;
+    font-size: 115px;
+  }
+  footer{
+    text-align: center;
+    background-color: #ffd32a;
+  }
+  a{
+    color: #2d3436;
+  }
+ 
+}
+
+
+
+
+/* 
+Kod dla duzych ekranów i powyzej (>600px) 
+*/
+
+@media only screen and (min-width: 1024px) {
+
+    .splash {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 24px;
+        background-image: linear-gradient(to right, #434343 0%, black 100%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        height: 100vh;
+        text-align: center;
+      }
+
+    .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    
+  }
+  
+  /* Style the list */
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header */
+  .price .header {
+    background-color: #ffd32a;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: #303952;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+  }
+    
+  .about {
+    background-color: #ffffff;
+    margin: 0 30px 0 30px;
+}
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.title-about {
+    margin: 5px 0 15px 0;
+    font-weight: normal;
+    color: #2d3436;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+
+  }
+
+
+  .features {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.wiecej{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.more {
+  width: 50%;
+  padding: 10px;
+}
+
+footer{
+  text-align: center;
+  background-color: #ffd32a;
+}
+a{
+  color: #2d3436;
+}
+.typewrite{
+  color: #ffd32a;
+  font-size: 120px;
+}
+
+}
+
